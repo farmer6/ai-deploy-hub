@@ -39,6 +39,13 @@ export async function POST(request: Request) {
     const privateKey = filePrivateKey ?? normalizedPrivateKey;
     const alipayPublicKey = fileAlipayPublicKey ?? normalizedAlipayPublicKey;
 
+    if (!privateKey) {
+      return NextResponse.json(
+        { message: "Server Config Error: Alipay private key missing" },
+        { status: 500 }
+      );
+    }
+
     const alipaySdk = new AlipaySdk({
       appId: APP_ID,
       privateKey,
