@@ -2,7 +2,6 @@
 
 import { Check, ShoppingCart } from "lucide-react";
 import { useCartStore } from "@/store/cart";
-import { toast } from "sonner"; // 可选：如果你没装 sonner 可以去掉 toast 调用，或者用 alert
 
 export default function PricingPage() {
   const { addItem } = useCartStore();
