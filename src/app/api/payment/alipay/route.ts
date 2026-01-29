@@ -12,8 +12,8 @@ export async function POST(request: Request) {
   const ALIPAY_PUBLIC_KEY_PATH = process.env.ALIPAY_PUBLIC_KEY_PATH;
   const GATEWAY = process.env.ALIPAY_GATEWAY;
 
-  if (!APP_ID || !PRIVATE_KEY) {
-    console.error("❌ 支付宝配置缺失: 请检查 .env.local 文件");
+  if (!APP_ID || (!PRIVATE_KEY && !PRIVATE_KEY_PATH)) {
+    console.error("❌ 支付宝配置缺失: 请检查 .env / .env.local 文件");
     return NextResponse.json(
       { message: "Server Config Error: Alipay Env Missing" }, 
       { status: 500 }
