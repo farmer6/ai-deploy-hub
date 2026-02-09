@@ -233,6 +233,16 @@ export default function Home() {
       <footer className="py-12 px-6 text-center border-t border-gray-200 mt-0">
          <p className="text-sm font-bold text-gray-900">AI_DEPLOY_HUB</p>
          <p className="text-xs text-gray-500 mt-2">一个专注于 AI 工具工程化使用的中性站点</p>
+         <p className="mt-3">
+           <a
+             href="https://beian.miit.gov.cn/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="text-sm font-medium text-gray-700 hover:text-black underline underline-offset-2"
+           >
+             备案号：皖ICP备2026002135号-1
+           </a>
+         </p>
          <p className="text-[10px] text-gray-400 font-mono mt-6 uppercase tracking-wider">
            内容持续更新 · 但不追逐热点
          </p>
