@@ -30,6 +30,16 @@ export default function RootLayout({
         <footer className="border-t border-gray-200 py-8 mt-auto text-center text-xs text-gray-400">
           <p>© 2024 AI Deploy Hub. Engineering use only.</p>
           <p className="mt-2">DYNAMIC BUILD v2.0.0 | NODE_ENV: production</p>
+          <p className="mt-2">
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-600"
+            >
+              备案号：皖ICP备2026002135号-1
+            </a>
+          </p>
         </footer>
       </body>
     </html>
